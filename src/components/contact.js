@@ -12,9 +12,9 @@ export default function Contact() {
         e.target.reset()
     }
 
-    function mialerta() {  
+    function mialerta() {
         alert("El mensaje ha sido enviado.");
-    } 
+    }
 
     return (
         <>
@@ -58,12 +58,11 @@ export default function Contact() {
                         <h2>Desarrolladores</h2>
                     </div>
                     <div className="row">
-                        <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.0s">
+                        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.0s">
                             <div className="team-item">
                                 <div className="team-img">
                                     <img src="img/deyson.jpg" alt="Image" />
                                     <div className="team-social">
-                                        <a href="https://twitter.com/DeysonRey" target="_blank"><i className="fab fa-twitter"></i></a>
                                         <a href="https://www.facebook.com/deyson.diaz.545" target="_blank"><i className="fab fa-facebook-f"></i></a>
                                         <a href="https://www.linkedin.com/in/deyson-diaz-192764208/" target="_blank"><i className="fab fa-linkedin-in"></i></a>
                                         <a href="https://www.instagram.com/d.diaz.choco/?hl=es-la" target="_blank"><i className="fab fa-instagram"></i></a>
@@ -76,104 +75,47 @@ export default function Contact() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                             <div className="team-item">
                                 <div className="team-img">
-                                    <img src="img/denilson.jpg" alt="Image"></img>
+                                    <img src="https://scontent.faqp3-1.fna.fbcdn.net/v/t39.30808-6/301956919_1467970550336423_2758130693007121308_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeG8H5Ll98T2OttvRDy48I_3q6mOXYOhAuqrqY5dg6EC6gmX5VwBQerm0-hri5gGwZUsQPBEsGWrEo6zS_l8deu0&_nc_ohc=x8EVqWRkjMEAX-DRHOb&_nc_ht=scontent.faqp3-1.fna&oh=00_AT8ge5KQt5snC0ICRdc1be4V_VmsJvgMWEd95CcRe2objw&oe=6349F3A9" alt="Image"></img>
                                     <div className="team-social">
-                                        <a href=""><i className="fab fa-twitter"></i></a>
-                                        <a href="https://www.facebook.com/denilson.flores.adi/" target="_blank"><i className="fab fa-facebook-f"></i></a>
-                                        <a href=""><i className="fab fa-linkedin-in"></i></a>
-                                        <a href="https://www.instagram.com/denilsonvaldivia/?hl=es" target="_blank"><i className="fab fa-instagram"></i></a>
+                                        <a href="https://www.facebook.com/cjgonzalesm" target="_blank"><i className="fab fa-facebook-f"></i></a>
+                                        <a href="https://www.linkedin.com/in/carlos-jesus-gonzales-molina-722a241b3/" target="_blank"><i className="fab fa-linkedin-in"></i></a>
+                                        <a href="https://www.instagram.com/cgonzamo/" target="_blank"><i className="fab fa-instagram"></i></a>
                                     </div>
                                 </div>
                                 <div className="team-text">
-                                    <h2>Denilson Edgardo Flores Valdivia</h2>
+                                    <h2>Carlos Jesus Gonzales Molina</h2>
                                     <p>Desarrollador Backend</p>
-                                    <a href="dfloresva@unsa.edu.pe?Subject=Informacion%20InfoAQP">dfloresva@unsa.edu.pe</a>
+                                    <a href="mailto:cgonzalesmo@unsa.edu.pe?Subject=Informacion%20InfoAQP">cgonzalesmo@unsa.edu.pe</a>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
                             <div className="team-item">
                                 <div className="team-img">
-                                    <img src="img/marco.jpg" alt="Image" />
+                                    <img src="https://scontent.faqp3-1.fna.fbcdn.net/v/t39.30808-6/273808763_116220164309974_437635529277773936_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHSnEghwhuzmTalndZWPyDWfyZilGaZMPF_JmKUZpkw8cwBg6sWyMuNBzYrOFPblHgJlAwqansITMWnm_qU4erb&_nc_ohc=N1y9II-tM8IAX-RTxym&_nc_ht=scontent.faqp3-1.fna&oh=00_AT_WItiCfiW0KxmeyqwJRUJyZRiZaMzhYWBlGob7qkbhoA&oe=634AEE30" alt="Image" />
                                     <div className="team-social">
-                                        <a href=""><i className="fab fa-twitter"></i></a>
-                                        <a href="https://www.facebook.com/marcoantonio.mendozarodriguez.7" target="_blank"><i className="fab fa-facebook-f"></i></a>
-                                        <a href=""><i className="fab fa-linkedin-in"></i></a>
-                                        <a href=""><i className="fab fa-instagram"></i></a>
+                                        <a href="https://www.facebook.com/profile.php?id=100077659733726" target="_blank"><i className="fab fa-facebook-f"></i></a>
+                                        <a href="" target="_blank"><i className="fab fa-linkedin-in"></i></a>
+                                        <a href="" target="_blank"><i className="fab fa-instagram"></i></a>
                                     </div>
                                 </div>
                                 <div className="team-text">
-                                    <h2>Marco Antonio Mendoza Rodriguez</h2>
-                                    <p>Desarrollador Backend</p>
-                                    <a href="mailto:mmendozarod@unsa.edu.pe?Subject=Informacion%20InfoAQP">mmendozarod@unsa.edu.pe</a>
+                                    <h2>Jhonatan Jesus Acuña Huisacayna</h2>
+                                    <p>Desarrollador Frontend</p>
+                                    <a href="mailto:jacuna@unsa.edu.pe?Subject=Informacion%20InfoAQP">jacuna@unsa.edu.pe</a>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-                            <div className="team-item">
-                                <div className="team-img">
-                                    <img src="img/fatima.jpg" alt="Image" />
-                                    <div className="team-social">
-                                        <a href=""><i className="fab fa-twitter"></i></a>
-                                        <a href="https://www.facebook.com/profile.php?id=100010557873858" target="_blank"><i className="fab fa-facebook-f"></i></a>
-                                        <a href=""><i className="fab fa-linkedin-in"></i></a>
-                                        <a href=""><i className="fab fa-instagram"></i></a>
-                                    </div>
 
-                                </div>
-                                <div className="team-text">
-                                    <h2>Fatima Gigi Rojas Carhuas</h2>
-                                    <p>Diseñadora del Sistema-Analista</p>
-                                    <a href="mailto:frojasca@unsa.edu.pe?Subject=Informacion%20InfoAQP">frojasca@unsa.edu.pe</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.8s">
 
-                        </div>
-                        <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="1s">
-                            <div className="team-item">
-                                <div className="team-img">
-                                    <img src="img/alexis.jpg" alt="Image" />
-                                    <div className="team-social">
-                                        <a href=""><i className="fab fa-twitter"></i></a>
-                                        <a href="https://www.facebook.com/alexisdario.anccoruelas/" target="_blank"><i className="fab fa-facebook-f"></i></a>
-                                        <a href=""><i className="fab fa-linkedin-in"></i></a>
-                                        <a href=""><i className="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                                <div className="team-text">
-                                    <h2>Alexis Dario Ancco Ruelas</h2>
-                                    <p>Responsable de Pruebas</p>
-                                    <a href="mailto:dfloresva@unsa.edu.pe?Subject=Informacion%20InfoAQP">dfloresva@unsa.edu.pe</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="1.2s">
-                            <div className="team-item">
-                                <div className="team-img">
-                                    <img src="img/diego.jpg" alt="Image" />
-                                    <div className="team-social">
-                                        <a href=""><i className="fab fa-twitter"></i></a>
-                                        <a href="https://www.facebook.com/diegodavid.pe" target="_blank"><i className="fab fa-facebook-f"></i></a>
-                                        <a href=""><i className="fab fa-linkedin-in"></i></a>
-                                        <a href="https://www.instagram.com/diegodavid.pe/" target="_blank"><i className="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                                <div className="team-text">
-                                    <h2>Diego David Anampa Chura</h2>
-                                    <p>Diseñador UI/UX</p>
-                                    <a href="mailto:danampa@unsa.edu.pe?Subject=Informacion%20InfoAQP">danampa@unsa.edu.pe</a>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
-           
+
             <div className="contact">
                 <div className="container">
                     <div className="section-header text-center wow zoomIn" data-wow-delay="0.1s">
@@ -234,7 +176,7 @@ export default function Contact() {
                     </div>
                 </div>
             </div>
-            
+
             <div className="footer wow fadeIn" data-wow-delay="0.3s">
                 <div className="container-fluid">
                     <div className="container">
@@ -258,7 +200,7 @@ export default function Contact() {
                         <div className="row">
                             <div className="col-md" align='center'>
                                 <p>&copy; InfoAQP, All Right Reserved.</p>
-                            </div>                          
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -270,4 +212,3 @@ export default function Contact() {
         </>
     )
 }
-
