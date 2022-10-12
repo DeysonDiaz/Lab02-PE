@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 import Chart from 'react-apexcharts'
 
 export default class Graphtwo extends Component {
-    
+
   constructor(props) {
     super(props);
 
     this.state = {
-    
+
       series: [{
         name: 'Pfizer',
         data: [59, 2215, 1211, 1737, 17, 8, 117, 11, 479, 38, 13, 1338, 8, 16, 25, 1652, 16, 10, 16, 151]
@@ -18,7 +18,7 @@ export default class Graphtwo extends Component {
       options: {
         chart: {
           type: 'bar',
-          height: 350,
+          width: '100%',
           toolbar: {
             show: false,
           }
@@ -39,7 +39,7 @@ export default class Graphtwo extends Component {
           colors: ['transparent']
         },
         xaxis: {
-          categories: ['Alto Selva Alegre', 'Arequipa', 'Cayma', 'Cerro Colorado', 
+          categories: ['Alto Selva Alegre', 'Arequipa', 'Cayma', 'Cerro Colorado',
                       'Characato', 'Chiguata', 'Jacobo Hunter', 'JLBYR',
                       'Mariano Melgar', 'Miraflores', 'Mollebaya', 'Paucarpata', 'Quequeña', 'Sabandia', 'Sachaca',
                       'Socabaya', 'Tiabaya', 'Uchumayo', 'Yanahuara', 'Yarabamba', 'Yura'],
@@ -63,16 +63,16 @@ export default class Graphtwo extends Component {
           }
         }
       },
-    
-    
+
+
     };
   }
-    
-    
+
+
     render() {
         return (
-            <div className="bar" style={{width:"50%", marginLeft: '25%', background: '#E5E8E8', borderRadius: '10px'}}>
-               <Chart options={this.state.options} series={this.state.series} type="bar" height={350} /> 
+            <div className="bar">
+               <Chart options={this.state.options} series={this.state.series} type="bar"  width={'100%'} height={350}/>
             </div>
         )
     }

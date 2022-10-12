@@ -31,7 +31,7 @@ export default class Vacunafabricante extends Component {
             const datadb = db.ref();
             await datadb.child("Datos").get().then((snapshot) => {
                 if (snapshot.exists()) {
-                    this.setState({                       
+                    this.setState({
                         data: snapshot.val(),
                         data2: snapshot.val(),
                         confirmar: true,
@@ -66,9 +66,9 @@ export default class Vacunafabricante extends Component {
             if (element.FABRICANTE == filtro){
                 datos.push(element);
             }
-        });        
+        });
         console.log(datos);
-        this.setState({                       
+        this.setState({
             data2: datos,
             key: Math.random()
         })
@@ -78,7 +78,7 @@ export default class Vacunafabricante extends Component {
     return (
         <>
             <div className="page-header">
-                <div className="container">
+				<div className="container">
                     <div className="row">
                         <div className="col-12">
                             <h2>Vacunación por fabricante</h2>
@@ -87,51 +87,51 @@ export default class Vacunafabricante extends Component {
                 </div>
             </div>
 
-            <div className="col-12">
-                <div className="col-12">
-                    <div className="col-12 text-center wow zoomIn" data-wow-delay="0.1s">
-                        <div className="col-12" >
-                            <div className='row'>
-                                <div className='filtrotex col-12 col-md-3 col-lg-2 mx-0 px-0'>
-                                    <div className='text-center my-2'>
-                                        BUSCAR POR:
-                                    </div>
-                                </div>
-                                <div className='col-12 col-sm-5 col-md-4 col-lg-3 ml-0'>
-                                    <select className='form-control mx-auto col-12' id="combo_1" onChange= {() => this.filter("combo_1")}>
-                                        <option value="0" >Todos</option>
-                                        <option value="1" >Pfizer</option>
-                                        <option value="2" >Sinopharm</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div className="containerTable mb-3">
-                            { this.state.confirmar ?
-                            <Table key={this.state.key} columns={this.state.values} data={this.state.data2} paginacion={true}></Table>
-                            :
-                            <center>
-                                <div className='row pt-5'>
-                                    <img
-                                        src='../assets/load.gif'
-                                        style={{ width: '80px', margin: 'auto' }}
-                                        alt='loading...'
-                                    />
-                                </div>
-                                <div className="col-12 bg-light" style={{ paddingTop: "106px" }}></div>
-                            </center>
-                            }
-                            </div>
-                        </div>
-                        <div data-wow-delay="0.3s">
-                            <div className="price-action mt-5 mb-3" style={{ textAlign: 'center' }}>
-                                <h1>Gráficas Estadísticas</h1>
-                            </div>
 
-                            <div className="col-12 p-2">
-                                <Pie></Pie><br></br>
-                                <Graphtwo></Graphtwo>
+            <div className="col-12 text-center wow zoomIn" data-wow-delay="0.1s">
+                <div className="col-12" >
+                    <div className='row'>
+                        <div className='filtrotex col-12 col-md-3 col-lg-2 mx-0 px-0'>
+                            <div className='text-center my-2'>
+                                BUSCAR POR:
                             </div>
                         </div>
+                        <div className='col-12 col-sm-5 col-md-4 col-lg-3 ml-0'>
+                            <select className='form-control mx-auto col-12' id="combo_1" onChange= {() => this.filter("combo_1")}>
+                                <option value="0" >Todos</option>
+                                <option value="1" >Pfizer</option>
+                                <option value="2" >Sinopharm</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div className="containerTable mb-3">
+                    { this.state.confirmar ?
+                    <Table key={this.state.key} columns={this.state.values} data={this.state.data2} paginacion={true}></Table>
+                    :
+                    <center>
+                        <div className='row pt-5'>
+                            <img
+                                src='../assets/load.gif'
+                                style={{ width: '80px', margin: 'auto' }}
+                                alt='loading...'
+                            />
+                        </div>
+                        <div className="col-12 bg-light" style={{ paddingTop: "106px" }}></div>
+                    </center>
+                    }
+                    </div>
+                </div>
+
+                <div data-wow-delay="0.3s">
+                    <div className="price-action mt-5 mb-3" style={{ textAlign: 'center' }}>
+                        <h1>Gráficas Estadísticas</h1>
+                    </div>
+
+                    <div className="container col-6" style={{width:"90%",height:"90%", background: '#E5E8E8', borderRadius: '10px', marginTop:"15px", marginBottom:"15px"}}>
+                        <Pie></Pie>
+                    </div>
+					<div className="container col-6" style={{width:"90%",height:"90%", background: '#E5E8E8', borderRadius: '10px',marginTop:"15px", marginBottom:"15px"}}>
+                        <Graphtwo></Graphtwo>
                     </div>
                 </div>
             </div>
@@ -159,7 +159,7 @@ export default class Vacunafabricante extends Component {
                         <div className="row">
                             <div className="col-md" align='center'>
                                 <p>&copy; InfoAQP, All Right Reserved.</p>
-                            </div>                          
+                            </div>
                         </div>
                     </div>
                 </div>

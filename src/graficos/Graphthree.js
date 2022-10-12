@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 import Chart from 'react-apexcharts'
 
 export default class Graphthree extends Component {
-    
+
     constructor(props) {
         super(props);
-    
+
         this.state = {
-        
+
           series: [{
             name: 'Masculino',
             data: [407, 2, 1, 48400, 3, 245, 488, 1]
@@ -40,12 +40,12 @@ export default class Graphthree extends Component {
               colors: ['transparent']
             },
             xaxis: {
-              categories: ["Adulto Mayor", "Brigadistas", "Estudiantes de ciencia de la salud", "Personal de Salud", "Personal de seguridad", 
+              categories: ["Adulto Mayor", "Brigadistas", "Estudiantes de ciencia de la salud", "Personal de Salud", "Personal de seguridad",
                             "Personal Militar o FFAA", "Policia Nacional del Peru", "Trabajador o personal de limpieza"],
             },
             title: {
-              margin: 20,
-              text: "Vacunación del grupo de riesgo por sexo",
+              margin: 30,
+              text: "Grupo de riesgo por sexo",
               align: "center",
               style: {
                   fontSize: '20px'
@@ -62,18 +62,17 @@ export default class Graphthree extends Component {
               }
             }
           },
-        
-        
+
+
         };
       }
 
-    
+
     render() {
         return (
-            <div className="bar" style={{width:"50%", marginLeft: '25%', background: '#E5E8E8', borderRadius: '10px'}}>
-               <Chart options={this.state.options} series={this.state.series} type="bar" height={350} /> 
+            <div className="bar" style={{ background: '#E5E8E8', borderRadius: '10px'}}>
+               <Chart options={this.state.options} series={this.state.series} type="bar" width={'100%'} height={400} />
             </div>
         )
     }
 }
-

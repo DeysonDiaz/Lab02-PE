@@ -152,13 +152,14 @@ export default class Vacunagrupo extends Component {
                             <div className="price-action mt-5 mb-3" style={{ textAlign: 'center' }}>
                                 <h1>Gráficas Estadísticas</h1>
                             </div>
+							<div className="container col-6" style={{width:"90%",height:"90%", background: '#E5E8E8', borderRadius: '10px', marginTop:"15px", marginBottom:"15px"}}>
+		                        <Graph></Graph>
+		                    </div>
+							<div className="container col-6" style={{width:"90%",height:"90%", background: '#E5E8E8', borderRadius: '10px',marginTop:"15px", marginBottom:"15px"}}>
+		                        <Graphthree></Graphthree>
+		                    </div>
 
-                            <div className="col-12 p-2">
-                                <Graph></Graph><br></br>
-                                <Graphthree></Graphthree>
-                            </div>
 
-                            
                         </div>
                     </div>
                 </div>
@@ -186,7 +187,7 @@ export default class Vacunagrupo extends Component {
                         <div className="row">
                             <div className="col-md" align='center'>
                                 <p>&copy; InfoAQP, All Right Reserved.</p>
-                            </div>                          
+                            </div>
                         </div>
                     </div>
                 </div>

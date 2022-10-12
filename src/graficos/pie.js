@@ -7,44 +7,39 @@ export default class Pie extends Component {
     super(props);
 
     this.state = {
-          
-        series: [5358, 2592],
+		series: [5358, 2592],
         options: {
-          chart: {
-            width: 380,
-            type: 'donut',
-            dropShadow: {
-              enabled: true,
-              color: '#111',
-              top: -1,
-              left: 3,
-              blur: 3,
-              opacity: 0.2
-            }
-          },
-          stroke: {
-            width: 0,
-          },
-          plotOptions: {
-            pie: {
-              donut: {
-                labels: {
-                  show: true,
-                  total: {
-                    showAlways: true,
-                    show: true
-                  }
-                }
-              }
-            }
-          },
-          labels: ["Pfizer", "Sinopharm"],
-          dataLabels: {
-            dropShadow: {
-              blur: 3,
-              opacity: 0.8
-            }
-          },
+			chart: {
+				type: 'donut',
+				dropShadow: {
+					enabled: true,
+					color: '#111',
+					top: -1,
+					left: 3,
+					blur: 3,
+					opacity: 0.2
+				}
+			},
+			plotOptions: {
+				pie: {
+					donut: {
+						labels: {
+						  show: true,
+						  total: {
+							showAlways: true,
+							show: true
+						  }
+						}
+					}
+				}
+			},
+			labels: ["Pfizer", "Sinopharm"],
+			dataLabels: {
+				dropShadow: {
+				  blur: 3,
+				  opacity: 0.8
+				}
+			},
           states: {
             hover: {
               filter: 'none'
@@ -58,7 +53,7 @@ export default class Pie extends Component {
             text: "Vacunación por fabricante",
             align: "center",
             style: {
-                fontSize: '20px'
+                fontSize: '15px'
             },
           },
           legend:{
@@ -70,19 +65,22 @@ export default class Pie extends Component {
                 vertical: 20
             },
           },
+		  responsive: [{
+  			breakpoint: 960,
+  			options: {},
+		  }],
         },
-        
-      
+
+
       };
     }
 
   render() {
 
     return (
-      <div className="donut" style={{width:"50%", marginLeft: '25%', background: '#E5E8E8', borderRadius: '10px'}}>
-        <Chart options={this.state.options} series={this.state.series} type="donut" width="100%"/>
+      <div className="donut">
+        <Chart options={this.state.options} series={this.state.series} type="donut" width={'100%'} height={350}/>
       </div>
     );
   }
 }
-
